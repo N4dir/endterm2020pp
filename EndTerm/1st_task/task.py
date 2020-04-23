@@ -14,7 +14,7 @@ mixer.music.play(-1)
 mixer.music.set_volume(0.1)
 
 soundGG = mixer.Sound("Music/GG1.wav")
-soundCatch = mixer.Sound("Music/ccaattcchh.wav")
+soundCatch = mixer.Sound("Music/plus_1.wav")
 
 soundMiss = mixer.Sound("Music/miss.wav")
 
