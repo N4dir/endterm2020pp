@@ -23,6 +23,7 @@ severities = sys.argv[1:]
 #IF NOTHING ENTERED AFTER PROGRAMM NAME WE WILL POP THIS TO THE SCREEN
 if not severities: 
     sys.stderr.write("Usage: %s [info] [warning] [error]\n" % sys.argv[0])
+    sys.exit(1)
    
 
 
