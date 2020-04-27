@@ -109,7 +109,7 @@ class Circle:
     
     def cnt_count(self):
         font = pygame.font.SysFont("Arial", 36)
-        text = font.render("Collected: "+ str(self.cnt), 1, (255,255,255))
+        text = font.render("Collected: "+ str(self.cnt), 1, (1,127,127))
         place = text.get_rect(center=(720,50))
         screen.blit(text,place)
 
@@ -153,11 +153,11 @@ while is_game:
 
     if circle.cnt < 0:
         font1 = pygame.font.SysFont("Arial", 80)
-        text1 = font1.render("Game Over", 1, (255,255,255))
+        text1 = font1.render("Game Over", 1, (209,71,50))
         place1 = text1.get_rect(center = (400,300))
 
         font2 = pygame.font.SysFont("Arial", 30)
-        text2 = font2.render("Press ESC to EXIT",1, (255,255,255))
+        text2 = font2.render("Press ESC to EXIT",1, (27,156,207))
         place2 = text2.get_rect(center = (400,340))
 
         screen.blit(text2,place2)
