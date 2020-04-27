@@ -262,12 +262,12 @@ while game:
             music_gg = True
 
             font = pygame.font.Font('freesansbold.ttf', 80)     
-            text = font.render("Game Over", 1, (0,0,0)) 
+            text = font.render("Game Over", 1, (237,20,0)) 
             place = text.get_rect(center = (400,275))   
             screen.blit(text, place)                    
 
             font = pygame.font.Font('freesansbold.ttf', 40)
-            text = font.render("Press ESC to Exit", 1, (0,0,0))
+            text = font.render("Press ESC to Exit", 1, (0,22,255))
             place = text.get_rect(center = (400, 335))
             screen.blit(text, place)
 
