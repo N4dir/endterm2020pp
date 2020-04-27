@@ -199,8 +199,8 @@ game = True
 music_gg = False
 tt = 0
 
-tank0 = Tank((35,187,17), (35,107,17), 60)
-tank1 = Tank((255,170,35), (255,120,35), 740, pygame.K_d, pygame.K_a, pygame.K_w, pygame.K_s)
+tank0 = Tank((35,187,17), (35,107,17), 80)
+tank1 = Tank((255,170,35), (255,120,35), 720, pygame.K_d, pygame.K_a, pygame.K_w, pygame.K_s)
 
 tanks = [tank0, tank1]
 
@@ -266,9 +266,9 @@ while game:
             place = text.get_rect(center = (400,275))   
             screen.blit(text, place)                    
 
-            font = pygame.font.Font('freesansbold.ttf', 50)
+            font = pygame.font.Font('freesansbold.ttf', 40)
             text = font.render("Press ESC to Exit", 1, (0,0,0))
-            place = text.get_rect(center = (400, 325))
+            place = text.get_rect(center = (400, 335))
             screen.blit(text, place)
 
     if music_gg == True and tt == 0:
