@@ -64,7 +64,7 @@ class Tank:
         self.y = random.randint(200,400)
 
     def life_counter(self):
-        font = pygame.font.SysFont("Arial", 36)
+        font = pygame.font.Font('freesansbold.ttf', 36)
         text = font.render("Lives: " + str(self.life_count), 1, self.color)
         place = text.get_rect(center=(self.Place_x, 50))
         screen.blit(text, place)
@@ -261,12 +261,12 @@ while game:
             mixer.music.stop()              
             music_gg = True
 
-            font = pygame.font.SysFont("Arial", 80)     
+            font = pygame.font.Font('freesansbold.ttf', 80)     
             text = font.render("Game Over", 1, (0,0,0)) 
             place = text.get_rect(center = (400,275))   
             screen.blit(text, place)                    
 
-            font = pygame.font.SysFont("Arial", 50)
+            font = pygame.font.Font('freesansbold.ttf', 50)
             text = font.render("Press ESC to Exit", 1, (0,0,0))
             place = text.get_rect(center = (400, 325))
             screen.blit(text, place)
