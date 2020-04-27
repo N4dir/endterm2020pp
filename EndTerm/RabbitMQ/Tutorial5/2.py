@@ -24,6 +24,7 @@ for binding_key in binding_keys:
 #IF ROUTE IS NOT SELECTED, PROGRAMM WILL ASK TO SELECT IT
 if not binding_keys:
     sys.stderr.write("Usage: %s [binding_key]...\n" % sys.argv[0])
+    sys.exit(1)
 
 print(' [*] Waiting for logs. To exit press CTRL+C')
 
